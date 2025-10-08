@@ -1,0 +1,155 @@
+{
+  "model_type": "LinearRegression",
+  "training_date": "2025-10-07 21:33:37",
+  "n_features": 90,
+  "feature_columns": [
+    "runtime",
+    "genre_Action",
+    "genre_Adult",
+    "genre_Adventure",
+    "genre_Animation",
+    "genre_Biography",
+    "genre_Comedy",
+    "genre_Crime",
+    "genre_Documentary",
+    "genre_Drama",
+    "genre_Family",
+    "genre_Fantasy",
+    "genre_Film-Noir",
+    "genre_Game-Show",
+    "genre_History",
+    "genre_Horror",
+    "genre_Music",
+    "genre_Musical",
+    "genre_Mystery",
+    "genre_News",
+    "genre_Reality-TV",
+    "genre_Romance",
+    "genre_Sci-Fi",
+    "genre_Sport",
+    "genre_Talk-Show",
+    "genre_Thriller",
+    "genre_War",
+    "genre_Western",
+    "genre_count",
+    "director_top01",
+    "director_top02",
+    "director_top03",
+    "director_top04",
+    "director_top05",
+    "director_top06",
+    "director_top07",
+    "director_top08",
+    "director_top09",
+    "director_top10",
+    "director_top11",
+    "director_top12",
+    "director_top13",
+    "director_top14",
+    "director_top15",
+    "director_top16",
+    "director_top17",
+    "director_top18",
+    "director_top19",
+    "director_top20",
+    "writer_top01",
+    "writer_top02",
+    "writer_top03",
+    "writer_top04",
+    "writer_top05",
+    "writer_top06",
+    "writer_top07",
+    "writer_top08",
+    "writer_top09",
+    "writer_top10",
+    "writer_top11",
+    "writer_top12",
+    "writer_top13",
+    "writer_top14",
+    "writer_top15",
+    "writer_top16",
+    "writer_top17",
+    "writer_top18",
+    "writer_top19",
+    "writer_top20",
+    "actor_top01",
+    "actor_top02",
+    "actor_top03",
+    "actor_top04",
+    "actor_top05",
+    "actor_top06",
+    "actor_top07",
+    "actor_top08",
+    "actor_top09",
+    "actor_top10",
+    "actor_top11",
+    "actor_top12",
+    "actor_top13",
+    "actor_top14",
+    "actor_top15",
+    "actor_top16",
+    "actor_top17",
+    "actor_top18",
+    "actor_top19",
+    "actor_top20",
+    "is_auteur_film"
+  ],
+  "target_variable": "avg_rating",
+  "train_size": 110425,
+  "test_size": 27607,
+  "performance_metrics": {
+    "train": {
+      "rmse": 1.0710476941355807,
+      "mae": 0.8200972702196061,
+      "r2": 0.2914523552087728
+    },
+    "test": {
+      "rmse": 1.0584815214091683,
+      "mae": 0.8123838427846272,
+      "r2": 0.29815307641068123
+    }
+  },
+  "intercept": 5.756627773545326,
+  "top_10_features": [
+    {
+      "feature": "writer_top11",
+      "coefficient": 1.8309063552309484
+    },
+    {
+      "feature": "director_top13",
+      "coefficient": 1.7045130096741472
+    },
+    {
+      "feature": "writer_top04",
+      "coefficient": 1.5295893868329435
+    },
+    {
+      "feature": "writer_top17",
+      "coefficient": 1.5173290219856275
+    },
+    {
+      "feature": "genre_Talk-Show",
+      "coefficient": 1.4128493868228706
+    },
+    {
+      "feature": "director_top06",
+      "coefficient": 1.349889536504131
+    },
+    {
+      "feature": "genre_Documentary",
+      "coefficient": 1.3381480923262854
+    },
+    {
+      "feature": "director_top16",
+      "coefficient": 1.2928913201187664
+    },
+    {
+      "feature": "director_top07",
+      "coefficient": 1.2733441988852663
+    },
+    {
+      "feature": "director_top11",
+      "coefficient": 1.1125417156446173
+    }
+  ]
+}

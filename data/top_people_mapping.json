@@ -1,0 +1,373 @@
+{
+  "directors": {
+    "director_top01": {
+      "id": "nm0634240",
+      "name": "Christopher Nolan",
+      "avg_rating": 8.174999999999999,
+      "movie_count": 12
+    },
+    "director_top02": {
+      "id": "nm0000229",
+      "name": "Steven Spielberg",
+      "avg_rating": 7.367647058823529,
+      "movie_count": 34
+    },
+    "director_top03": {
+      "id": "nm0000233",
+      "name": "Quentin Tarantino",
+      "avg_rating": 7.766666666666667,
+      "movie_count": 15
+    },
+    "director_top04": {
+      "id": "nm0000217",
+      "name": "Martin Scorsese",
+      "avg_rating": 7.517647058823529,
+      "movie_count": 34
+    },
+    "director_top05": {
+      "id": "nm0000631",
+      "name": "Ridley Scott",
+      "avg_rating": 6.973333333333333,
+      "movie_count": 30
+    },
+    "director_top06": {
+      "id": "nm0000399",
+      "name": "David Fincher",
+      "avg_rating": 7.583333333333333,
+      "movie_count": 12
+    },
+    "director_top07": {
+      "id": "nm0001392",
+      "name": "Peter Jackson",
+      "avg_rating": 7.7,
+      "movie_count": 15
+    },
+    "director_top08": {
+      "id": "nm0000709",
+      "name": "Robert Zemeckis",
+      "avg_rating": 6.990909090909091,
+      "movie_count": 22
+    },
+    "director_top09": {
+      "id": "nm0000116",
+      "name": "James Cameron",
+      "avg_rating": 7.281818181818181,
+      "movie_count": 11
+    },
+    "director_top10": {
+      "id": "nm0000142",
+      "name": "Clint Eastwood",
+      "avg_rating": 6.965853658536586,
+      "movie_count": 41
+    },
+    "director_top11": {
+      "id": "nm0000318",
+      "name": "Tim Burton",
+      "avg_rating": 6.970000000000001,
+      "movie_count": 20
+    },
+    "director_top12": {
+      "id": "nm0000338",
+      "name": "Francis Ford Coppola",
+      "avg_rating": 6.542857142857143,
+      "movie_count": 28
+    },
+    "director_top13": {
+      "id": "nm0001054",
+      "name": "Joel Coen",
+      "avg_rating": 7.280952380952381,
+      "movie_count": 21
+    },
+    "director_top14": {
+      "id": "nm0001053",
+      "name": "Ethan Coen",
+      "avg_rating": 7.113636363636363,
+      "movie_count": 22
+    },
+    "director_top15": {
+      "id": "nm0005363",
+      "name": "Guy Ritchie",
+      "avg_rating": 6.89375,
+      "movie_count": 16
+    },
+    "director_top16": {
+      "id": "nm0001741",
+      "name": "Bryan Singer",
+      "avg_rating": 7.2,
+      "movie_count": 10
+    },
+    "director_top17": {
+      "id": "nm0000165",
+      "name": "Ron Howard",
+      "avg_rating": 6.880645161290323,
+      "movie_count": 31
+    },
+    "director_top18": {
+      "id": "nm0811583",
+      "name": "Zack Snyder",
+      "avg_rating": 6.625,
+      "movie_count": 12
+    },
+    "director_top19": {
+      "id": "nm0898288",
+      "name": "Denis Villeneuve",
+      "avg_rating": 7.5249999999999995,
+      "movie_count": 12
+    },
+    "director_top20": {
+      "id": "nm0751577",
+      "name": "Anthony Russo",
+      "avg_rating": 7.022222222222222,
+      "movie_count": 9
+    }
+  },
+  "writers": {
+    "writer_top01": {
+      "id": "nm0634240",
+      "name": "Christopher Nolan",
+      "avg_rating": 8.166666666666666,
+      "movie_count": 12
+    },
+    "writer_top02": {
+      "id": "nm0000184",
+      "name": "George Lucas",
+      "avg_rating": 7.1000000000000005,
+      "movie_count": 23
+    },
+    "writer_top03": {
+      "id": "nm0000233",
+      "name": "Quentin Tarantino",
+      "avg_rating": 7.694117647058825,
+      "movie_count": 17
+    },
+    "writer_top04": {
+      "id": "nm1293367",
+      "name": "Larry Lieber",
+      "avg_rating": 7.292857142857143,
+      "movie_count": 14
+    },
+    "writer_top05": {
+      "id": "nm0000175",
+      "name": "Stephen King",
+      "avg_rating": 6.080645161290323,
+      "movie_count": 62
+    },
+    "writer_top06": {
+      "id": "nm0634300",
+      "name": "Jonathan Nolan",
+      "avg_rating": 8.620000000000001,
+      "movie_count": 5
+    },
+    "writer_top07": {
+      "id": "nm0275286",
+      "name": "David S. Goyer",
+      "avg_rating": 6.336842105263157,
+      "movie_count": 19
+    },
+    "writer_top08": {
+      "id": "nm0001392",
+      "name": "Peter Jackson",
+      "avg_rating": 7.464285714285714,
+      "movie_count": 14
+    },
+    "writer_top09": {
+      "id": "nm0909638",
+      "name": "Fran Walsh",
+      "avg_rating": 7.538461538461538,
+      "movie_count": 13
+    },
+    "writer_top10": {
+      "id": "nm0101991",
+      "name": "Philippa Boyens",
+      "avg_rating": 7.590000000000001,
+      "movie_count": 10
+    },
+    "writer_top11": {
+      "id": "nm0000116",
+      "name": "James Cameron",
+      "avg_rating": 7.178571428571429,
+      "movie_count": 14
+    },
+    "writer_top12": {
+      "id": "nm0744429",
+      "name": "Terry Rossio",
+      "avg_rating": 6.670833333333333,
+      "movie_count": 24
+    },
+    "writer_top13": {
+      "id": "nm1321656",
+      "name": "Stephen McFeely",
+      "avg_rating": 6.978571428571429,
+      "movie_count": 14
+    },
+    "writer_top14": {
+      "id": "nm1321655",
+      "name": "Christopher Markus",
+      "avg_rating": 6.978571428571429,
+      "movie_count": 14
+    },
+    "writer_top15": {
+      "id": "nm0004056",
+      "name": "Andrew Stanton",
+      "avg_rating": 7.627272727272728,
+      "movie_count": 11
+    },
+    "writer_top16": {
+      "id": "nm4160687",
+      "name": "Jim Starlin",
+      "avg_rating": 7.466666666666667,
+      "movie_count": 9
+    },
+    "writer_top17": {
+      "id": "nm0746830",
+      "name": "J.K. Rowling",
+      "avg_rating": 7.418181818181818,
+      "movie_count": 11
+    },
+    "writer_top18": {
+      "id": "nm0254645",
+      "name": "Ted Elliott",
+      "avg_rating": 6.725,
+      "movie_count": 20
+    },
+    "writer_top19": {
+      "id": "nm0462895",
+      "name": "David Koepp",
+      "avg_rating": 6.481818181818182,
+      "movie_count": 33
+    },
+    "writer_top20": {
+      "id": "nm0230032",
+      "name": "Pete Docter",
+      "avg_rating": 8.157142857142857,
+      "movie_count": 7
+    }
+  },
+  "actors": {
+    "actor_top01": {
+      "id": "nm0424060",
+      "name": "Scarlett Johansson",
+      "avg_rating": 6.883870967741935,
+      "movie_count": 62
+    },
+    "actor_top02": {
+      "id": "nm0000168",
+      "name": "Samuel L. Jackson",
+      "avg_rating": 6.38348623853211,
+      "movie_count": 109
+    },
+    "actor_top03": {
+      "id": "nm0000375",
+      "name": "Robert Downey Jr.",
+      "avg_rating": 6.628571428571429,
+      "movie_count": 63
+    },
+    "actor_top04": {
+      "id": "nm0000093",
+      "name": "Brad Pitt",
+      "avg_rating": 6.985454545454545,
+      "movie_count": 55
+    },
+    "actor_top05": {
+      "id": "nm0262635",
+      "name": "Chris Evans",
+      "avg_rating": 6.863414634146341,
+      "movie_count": 41
+    },
+    "actor_top06": {
+      "id": "nm0000151",
+      "name": "Morgan Freeman",
+      "avg_rating": 6.4541176470588235,
+      "movie_count": 85
+    },
+    "actor_top07": {
+      "id": "nm0749263",
+      "name": "Mark Ruffalo",
+      "avg_rating": 6.984090909090909,
+      "movie_count": 44
+    },
+    "actor_top08": {
+      "id": "nm0000158",
+      "name": "Tom Hanks",
+      "avg_rating": 6.853125,
+      "movie_count": 64
+    },
+    "actor_top09": {
+      "id": "nm0000138",
+      "name": "Leonardo DiCaprio",
+      "avg_rating": 7.225714285714286,
+      "movie_count": 35
+    },
+    "actor_top10": {
+      "id": "nm0000134",
+      "name": "Robert De Niro",
+      "avg_rating": 6.502941176470588,
+      "movie_count": 102
+    },
+    "actor_top11": {
+      "id": "nm0000288",
+      "name": "Christian Bale",
+      "avg_rating": 6.916666666666667,
+      "movie_count": 48
+    },
+    "actor_top12": {
+      "id": "nm0413168",
+      "name": "Hugh Jackman",
+      "avg_rating": 6.961904761904761,
+      "movie_count": 42
+    },
+    "actor_top13": {
+      "id": "nm0000353",
+      "name": "Willem Dafoe",
+      "avg_rating": 6.515625,
+      "movie_count": 96
+    },
+    "actor_top14": {
+      "id": "nm0000354",
+      "name": "Matt Damon",
+      "avg_rating": 6.958490566037736,
+      "movie_count": 53
+    },
+    "actor_top15": {
+      "id": "nm0000246",
+      "name": "Bruce Willis",
+      "avg_rating": 5.50686274509804,
+      "movie_count": 102
+    },
+    "actor_top16": {
+      "id": "nm0719637",
+      "name": "Jeremy Renner",
+      "avg_rating": 6.993939393939394,
+      "movie_count": 33
+    },
+    "actor_top17": {
+      "id": "nm0000148",
+      "name": "Harrison Ford",
+      "avg_rating": 6.772549019607843,
+      "movie_count": 51
+    },
+    "actor_top18": {
+      "id": "nm0000332",
+      "name": "Don Cheadle",
+      "avg_rating": 6.9461538461538455,
+      "movie_count": 39
+    },
+    "actor_top19": {
+      "id": "nm0000198",
+      "name": "Gary Oldman",
+      "avg_rating": 6.5147540983606556,
+      "movie_count": 61
+    },
+    "actor_top20": {
+      "id": "nm0000323",
+      "name": "Michael Caine",
+      "avg_rating": 6.419444444444444,
+      "movie_count": 108
+    }
+  },
+  "selection_criteria": {
+    "method": "total_votes_popularity",
+    "min_movies": 5,
+    "note": "Selected based on total votes (popularity). Only pre-release info saved. Auteurs not included separately to avoid duplication with directors/writers."
+  }
+}
