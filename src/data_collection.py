@@ -19,6 +19,52 @@ class MovieDataCollector:
             'imdb_datasets': 'https://datasets.imdbws.com'
         }
     
+    def _download_file_if_needed(self, filename: str, data_dir: str) -> bool:
+        """
+        Download a file from IMDb if it doesn't exist locally.
+        
+        Args:
+            filename: Name of the file to download
+            data_dir: Directory to save the file
+            
+        Returns:
+            True if file exists or was downloaded successfully, False otherwise
+        """
+        filepath = os.path.join(data_dir, filename)
+        
+        if os.path.exists(filepath):
+            print(f"📂 {filename} already exists, skipping download")
+            return True
+        
+        print(f"📥 Downloading {filename} from IMDb (free public dataset)...")
+        url = f"{self.base_urls['imdb_datasets']}/{filename}"
+        
+        try:
+            # Download file with progress
+            response = requests.get(url, stream=True)
+            response.raise_for_status()
+            
+            os.makedirs(data_dir, exist_ok=True)
+            
+            total_size = int(response.headers.get('content-length', 0))
+            downloaded_size = 0
+            
+            with open(filepath, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        downloaded_size += len(chunk)
+                        if total_size > 0:
+                            progress = (downloaded_size / total_size) * 100
+                            print(f"\r  Progress: {progress:.1f}%", end='', flush=True)
+            
+            print(f"\n  ✅ Downloaded {filename}")
+            return True
+            
+        except requests.RequestException as e:
+            print(f"  ❌ Error downloading {filename}: {e}")
+            return False
+    
     def collect_imdb_datasets(self, data_dir: str = 'data/raw', movies_only: bool = True) -> Dict[str, pd.DataFrame]:
         """
         Download and load IMDb datasets (No API key required - public datasets).
@@ -53,7 +99,14 @@ class MovieDataCollector:
         movie_ids = None
         if movies_only:
             print("📊 Loading title_basics to filter for movies...")
-            filepath = os.path.join(data_dir, datasets['title_basics'])
+            filename = datasets['title_basics']
+            filepath = os.path.join(data_dir, filename)
+            
+            # Download if needed
+            if not self._download_file_if_needed(filename, data_dir):
+                print("  ❌ Failed to download title_basics - cannot proceed")
+                return {}
+            
             try:
                 df = pd.read_csv(filepath, sep='\t', low_memory=False, na_values=['\\N'])
                 # Filter for movies only
@@ -69,39 +122,13 @@ class MovieDataCollector:
         for name, filename in datasets.items():
             if name == 'title_basics' and movies_only:
                 continue  # Already loaded
-                
+            
             filepath = os.path.join(data_dir, filename)
             
-            if not os.path.exists(filepath):
-                print(f"📥 Downloading {filename} from IMDb (free public dataset)...")
-                url = f"{self.base_urls['imdb_datasets']}/{filename}"
-                
-                try:
-                    # Download file with progress
-                    response = requests.get(url, stream=True)
-                    response.raise_for_status()
-                    
-                    os.makedirs(data_dir, exist_ok=True)
-                    
-                    total_size = int(response.headers.get('content-length', 0))
-                    downloaded_size = 0
-                    
-                    with open(filepath, 'wb') as f:
-                        for chunk in response.iter_content(chunk_size=8192):
-                            if chunk:
-                                f.write(chunk)
-                                downloaded_size += len(chunk)
-                                if total_size > 0:
-                                    progress = (downloaded_size / total_size) * 100
-                                    print(f"\r  Progress: {progress:.1f}%", end='', flush=True)
-                    
-                    print(f"\n  ✅ Downloaded {filename}")
-                    
-                except requests.RequestException as e:
-                    print(f"  ❌ Error downloading {filename}: {e}")
-                    continue
-            else:
-                print(f"📂 {filename} already exists, skipping download")
+            # Download if needed
+            if not self._download_file_if_needed(filename, data_dir):
+                print(f"  ⚠️  Skipping {name} due to download failure")
+                continue
             
             print(f"📊 Loading {name}...")
             try:
