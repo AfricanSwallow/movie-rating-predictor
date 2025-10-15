@@ -1,0 +1,161 @@
+{
+  "model_type": "RandomForestRegressor",
+  "training_date": "2025-10-14 12:50:14",
+  "n_features": 90,
+  "feature_columns": [
+    "runtime",
+    "genre_Action",
+    "genre_Adult",
+    "genre_Adventure",
+    "genre_Animation",
+    "genre_Biography",
+    "genre_Comedy",
+    "genre_Crime",
+    "genre_Documentary",
+    "genre_Drama",
+    "genre_Family",
+    "genre_Fantasy",
+    "genre_Film-Noir",
+    "genre_Game-Show",
+    "genre_History",
+    "genre_Horror",
+    "genre_Music",
+    "genre_Musical",
+    "genre_Mystery",
+    "genre_News",
+    "genre_Reality-TV",
+    "genre_Romance",
+    "genre_Sci-Fi",
+    "genre_Sport",
+    "genre_Talk-Show",
+    "genre_Thriller",
+    "genre_War",
+    "genre_Western",
+    "genre_count",
+    "director_top01",
+    "director_top02",
+    "director_top03",
+    "director_top04",
+    "director_top05",
+    "director_top06",
+    "director_top07",
+    "director_top08",
+    "director_top09",
+    "director_top10",
+    "director_top11",
+    "director_top12",
+    "director_top13",
+    "director_top14",
+    "director_top15",
+    "director_top16",
+    "director_top17",
+    "director_top18",
+    "director_top19",
+    "director_top20",
+    "writer_top01",
+    "writer_top02",
+    "writer_top03",
+    "writer_top04",
+    "writer_top05",
+    "writer_top06",
+    "writer_top07",
+    "writer_top08",
+    "writer_top09",
+    "writer_top10",
+    "writer_top11",
+    "writer_top12",
+    "writer_top13",
+    "writer_top14",
+    "writer_top15",
+    "writer_top16",
+    "writer_top17",
+    "writer_top18",
+    "writer_top19",
+    "writer_top20",
+    "actor_top01",
+    "actor_top02",
+    "actor_top03",
+    "actor_top04",
+    "actor_top05",
+    "actor_top06",
+    "actor_top07",
+    "actor_top08",
+    "actor_top09",
+    "actor_top10",
+    "actor_top11",
+    "actor_top12",
+    "actor_top13",
+    "actor_top14",
+    "actor_top15",
+    "actor_top16",
+    "actor_top17",
+    "actor_top18",
+    "actor_top19",
+    "actor_top20",
+    "is_auteur_film"
+  ],
+  "target_variable": "avg_rating",
+  "train_size": 110425,
+  "test_size": 27607,
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "random_state": 42
+  },
+  "performance_metrics": {
+    "train": {
+      "rmse": 1.0356887592612858,
+      "mae": 0.7890121685676953,
+      "r2": 0.3374632651134505
+    },
+    "test": {
+      "rmse": 1.0364067097963152,
+      "mae": 0.7910483918369446,
+      "r2": 0.32712208964837264
+    }
+  },
+  "top_10_features": [
+    {
+      "feature": "genre_Horror",
+      "importance": 0.3180922458697897
+    },
+    {
+      "feature": "runtime",
+      "importance": 0.19392695960189968
+    },
+    {
+      "feature": "genre_Documentary",
+      "importance": 0.16834235415300094
+    },
+    {
+      "feature": "genre_Drama",
+      "importance": 0.11266164733515495
+    },
+    {
+      "feature": "is_auteur_film",
+      "importance": 0.05444793184030395
+    },
+    {
+      "feature": "genre_Action",
+      "importance": 0.035512053678712054
+    },
+    {
+      "feature": "genre_Thriller",
+      "importance": 0.024465167279433223
+    },
+    {
+      "feature": "genre_Sci-Fi",
+      "importance": 0.021954251443584396
+    },
+    {
+      "feature": "genre_Animation",
+      "importance": 0.020812014561481712
+    },
+    {
+      "feature": "genre_Comedy",
+      "importance": 0.010616914094439033
+    }
+  ]
+}
