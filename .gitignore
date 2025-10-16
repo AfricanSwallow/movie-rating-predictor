@@ -54,6 +54,10 @@ models/*.pkl
 models/*.joblib
 models/*.h5
 
+# Exception: Include profit prediction model for deployment (small files ~18KB total)
+!models/profit_prediction_model.pkl
+!models/profit_prediction_metadata.json
+
 # OS
 .DS_Store
 Thumbs.db
