@@ -203,7 +203,7 @@ def render_review_clustering_page():
     inject_custom_css()
     
     # Page title
-    st.title("🎬 Movie Review Clustering Analysis")
+    st.title("Movie Review Clustering Analysis")
     
     st.markdown("""
     <div class="insight-box">
@@ -234,7 +234,7 @@ def render_review_clustering_page():
         return
     
     # Overview metrics
-    st.header("📊 Analysis Overview")
+    st.header("Analysis Overview")
     
     col1, col2, col3 = st.columns(3)
     
@@ -260,7 +260,7 @@ def render_review_clustering_page():
     
     # Display selected section
     if section == "Word Cloud Analysis":
-        st.header("☁️ Word Cloud Analysis")
+        st.header("Word Cloud Analysis")
         
         st.markdown("""
         **Word clouds visualize the most frequently mentioned terms in each cluster.**
@@ -276,7 +276,7 @@ def render_review_clustering_page():
                 fig = create_wordcloud_grid(df)
                 st.pyplot(fig)
             
-            with st.expander("📖 Cluster Interpretations"):
+            with st.expander("Cluster Interpretations"):
                 st.markdown("""
                 - **Cluster 0 (Sci-Fi/Space)**: Reviews emphasize scientific concepts, space themes, 
                   and directors like Christopher Nolan
@@ -292,7 +292,7 @@ def render_review_clustering_page():
             st.warning("Required columns not found in dataset.")
     
     elif section == "Cluster Visualization (t-SNE)":
-        st.header("🗺️ Cluster Visualization (t-SNE)")
+        st.header("Cluster Visualization (t-SNE)")
         
         st.markdown("""
         **t-SNE (t-Distributed Stochastic Neighbor Embedding) projects high-dimensional 
@@ -308,7 +308,7 @@ def render_review_clustering_page():
             fig = create_tsne_visualization(df)
             st.pyplot(fig)
             
-            with st.expander("💡 What This Shows"):
+            with st.expander("What This Shows"):
                 st.markdown("""
                 - **Clear Separation**: Some clusters (like Sci-Fi and Drama) are well-separated, 
                   indicating distinct vocabulary patterns
@@ -321,7 +321,7 @@ def render_review_clustering_page():
             st.warning("t-SNE coordinates not found. Please regenerate the data with t-SNE coordinates.")
     
     elif section == "Aspect-Based Analysis":
-        st.header("🎯 Aspect-Based Analysis")
+        st.header("Aspect-Based Analysis")
         
         st.markdown("""
         **Aspect analysis measures how much each cluster emphasizes different movie qualities.**
@@ -335,20 +335,23 @@ def render_review_clustering_page():
             fig = create_aspect_heatmap(aspect_profiles)
             st.pyplot(fig)
             
-            with st.expander("🔍 Key Insights"):
+            with st.expander("Key Insights"):
                 st.markdown("""
                 The aspect profile heatmap reveals distinct viewing preferences:
                 
-                - **Cluster 5 (Highest Overall Engagement)**: Values plot/story, acting, emotions, 
-                  and visuals most highly - represents viewers who appreciate well-rounded filmmaking
-                - **Cluster 1 (Music Focus)**: Shows unusually high music/sound scores - likely reviews 
-                  of musicals or films with notable soundtracks
-                - **Cluster 3 (Direction)**: Emphasizes directorial vision and filmmaking craft
-                - **Cluster 0 (Entertainment)**: Higher entertainment scores - viewers seeking fun 
-                  and engaging experiences
+                - **Cluster 0 - Entertainment-Focused** (n=4,627): Values fun and enjoyment above all
                 
-                These patterns help us understand not just that reviews are positive, but **why** 
-                viewers appreciated these films.
+                - **Cluster 1 - Music & Sound Enthusiasts** (n=2,379): Exceptionally high music/sound scores (1.93)
+                
+                - **Cluster 2 - Casual/Nostalgic Viewers** (n=10,181): Balanced but lower intensity appreciation
+                
+                - **Cluster 3 - Craft & Direction Appreciators** (n=3,193): Focuses on directorial vision and filmmaking
+                
+                - **Cluster 4 - Story & Performance Lovers** (n=4,358): Values strong narratives and acting
+                
+                - **Cluster 5 - Passionate Cinephiles** (n=1,482): Highest scores across ALL aspects
+                
+                These patterns reveal **why** viewers appreciated these films, not just that they liked them.
                 """)
             
             # Cluster size distribution
@@ -360,7 +363,7 @@ def render_review_clustering_page():
             st.warning("Aspect profile data not found.")
     
     elif section == "Genre Insights":
-        st.header("🎭 Genre Insights")
+        st.header("Genre Insights")
         
         st.markdown("""
         **Different genres show distinct patterns in what viewers value.**
@@ -376,7 +379,7 @@ def render_review_clustering_page():
             fig = create_genre_heatmap(genre_profiles)
             st.pyplot(fig)
             
-            with st.expander("📊 Genre-Specific Preferences"):
+            with st.expander("Genre-Specific Preferences"):
                 st.markdown("""
                 The heatmap reveals clear genre preferences:
                 
@@ -402,7 +405,7 @@ def render_review_clustering_page():
                 fig = create_genre_comparison(genre_profiles, selected_genres)
                 st.pyplot(fig)
                 
-                st.info("💡 Use the selector above to compare different genres and identify what makes each genre's audience unique.")
+                st.info("Use the selector above to compare different genres and identify what makes each genre's audience unique.")
         else:
             st.warning("Genre profile data not found.")
 
@@ -410,7 +413,7 @@ def render_review_clustering_page():
 if __name__ == "__main__":
     st.set_page_config(
         page_title="Review Clustering Analysis",
-        page_icon="🎬",
+        page_icon="📊",
         layout="wide"
     )
     render_review_clustering_page()
