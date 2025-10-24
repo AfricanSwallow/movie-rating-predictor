@@ -33,6 +33,10 @@ pyyaml>=6.0
 # Data Visualization
 plotly>=5.9.0
 bokeh>=2.4.0
+wordcloud>=1.9.0
+
+# Streamlit (for web app)
+streamlit>=1.28.0
 
 # Model Deployment (optional)
 joblib>=1.1.0
