@@ -1,1 +1,2 @@
 Web app link: https://movie-rating-predictor-g7bj7bg5xdrceeyucsgkwf.streamlit.app/Clustering_Analysis
+Technical report in technical_report.pdf
